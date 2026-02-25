@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一个网页小游戏</title>
+    <!-- 引入我们自己的样式文件 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入我们自己的逻辑文件 -->
+    <script src="game.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>图片切换小游戏</h1>
+        <div class="game-area">
+            <!-- 图片展示区域 -->
+            <div class="image-box">
+                <!-- 初始图片，id为"display-image"，方便JavaScript操作 -->
+                <img id="display-image" src="https://picsum.photos/128/128?random=1" alt="随机图片">
+                <!-- 用于显示随机数字的叠加层 -->
+                <div id="number-overlay">0</div>
+            </div>
+            <!-- 切换按钮 -->
+            <button id="switch-btn">切换图片并生成随机数</button>
+            <p class="hint">每次点击按钮，图片和数字都会随机变化。</p>
+        </div>
+    </div>
+</body>
+</html>
